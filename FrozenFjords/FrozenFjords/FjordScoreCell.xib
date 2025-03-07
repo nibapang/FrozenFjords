@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FjordScoreCell" rowHeight="147" id="cfh-2g-yB7" customClass="FjordScoreCell" customModule="Frozen_Fjords" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cfh-2g-yB7" id="96x-5P-PBI">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_score" translatesAutoresizingMaskIntoConstraints="NO" id="lWw-yJ-5FI">
+                        <rect key="frame" x="12" y="12" width="384" height="123"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ2-MM-Dei">
+                        <rect key="frame" x="78.666666666666686" y="46" width="251" height="55"/>
+                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lWw-yJ-5FI" secondAttribute="bottom" constant="12" id="0g2-Al-Yjs"/>
+                    <constraint firstItem="lWw-yJ-5FI" firstAttribute="leading" secondItem="96x-5P-PBI" secondAttribute="leading" constant="12" id="Cwt-06-REu"/>
+                    <constraint firstItem="yZ2-MM-Dei" firstAttribute="centerY" secondItem="lWw-yJ-5FI" secondAttribute="centerY" id="VjJ-1o-m8Y"/>
+                    <constraint firstItem="yZ2-MM-Dei" firstAttribute="height" secondItem="lWw-yJ-5FI" secondAttribute="height" multiplier="0.447154" id="f6U-qO-6d8"/>
+                    <constraint firstItem="yZ2-MM-Dei" firstAttribute="width" secondItem="lWw-yJ-5FI" secondAttribute="width" multiplier="0.653646" id="h1N-g9-KHs"/>
+                    <constraint firstItem="lWw-yJ-5FI" firstAttribute="top" secondItem="96x-5P-PBI" secondAttribute="top" constant="12" id="nNI-De-sTm"/>
+                    <constraint firstAttribute="trailing" secondItem="lWw-yJ-5FI" secondAttribute="trailing" constant="12" id="sSA-wX-A20"/>
+                    <constraint firstItem="yZ2-MM-Dei" firstAttribute="centerX" secondItem="lWw-yJ-5FI" secondAttribute="centerX" id="wz7-TS-Sbp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblscore" destination="yZ2-MM-Dei" id="h6W-6j-KxA"/>
+            </connections>
+            <point key="canvasLocation" x="209.16030534351145" y="0.35211267605633806"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_score" width="332" height="104"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

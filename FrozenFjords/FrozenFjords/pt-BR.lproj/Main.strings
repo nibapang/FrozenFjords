@@ -1,0 +1,33 @@
+
+/* Class = "UINavigationItem"; title = "Starfish Dash"; ObjectID = "41J-4q-0uu"; */
+"41J-4q-0uu.title" = "Starfish Dash";
+
+/* Class = "UINavigationItem"; title = "Setting"; ObjectID = "4qd-WC-1zE"; */
+"4qd-WC-1zE.title" = "Setting";
+
+/* Class = "UINavigationItem"; title = "About Us"; ObjectID = "5pe-Kf-8aE"; */
+"5pe-Kf-8aE.title" = "About Us";
+
+/* Class = "UINavigationItem"; title = "Privacy Policy"; ObjectID = "Dx3-KF-vhg"; */
+"Dx3-KF-vhg.title" = "Privacy Policy";
+
+/* Class = "UINavigationItem"; title = "Score History"; ObjectID = "F7s-8X-HFH"; */
+"F7s-8X-HFH.title" = "Score History";
+
+/* Class = "UINavigationItem"; title = "Undead Archer"; ObjectID = "FvL-wn-ldt"; */
+"FvL-wn-ldt.title" = "Undead Archer";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "J3w-cH-dlW"; */
+"J3w-cH-dlW.normalTitle" = "Submit";
+
+/* Class = "UITextView"; text = "Welcome to Frozen Fjords, where adventure meets excitement in a world of thrilling arcade challenges! ❄️✨ Our mission is to create fast-paced, fun, and addictive games that test your skills, reflexes, and strategy. Whether you’re dodging enemies, leaping between platforms, or taking down the undead, there’s always a new challenge waiting for you. 🔥 Starfish Dash – Dive into an underwater adventure as you guide your starfish through treacherous waters, dodging enemies and racing to the highest score! 🌊🐠\n\n🌑 Shadow Jumper – A test of agility and precision! Leap from platform to platform, avoid deadly drops, and survive as long as possible in this high-speed jumping challenge. ⚡🏃‍♂️\n\n🏹 Undead Archer – The ultimate zombie-slaying challenge! Take control of a skilled archer, fend off waves of the undead, and see how long you can survive the apocalypse. 🧟‍♂️🔥\n\n📊 Score History – Compete against yourself and others! Track your best performances, break records, and climb the leaderboards across all our games. 🏆📈"; ObjectID = "SGw-oY-Ibn"; */
+"SGw-oY-Ibn.text" = "Welcome to Frozen Fjords, where adventure meets excitement in a world of thrilling arcade challenges! ❄️✨ Our mission is to create fast-paced, fun, and addictive games that test your skills, reflexes, and strategy. Whether you’re dodging enemies, leaping between platforms, or taking down the undead, there’s always a new challenge waiting for you. 🔥 Starfish Dash – Dive into an underwater adventure as you guide your starfish through treacherous waters, dodging enemies and racing to the highest score! 🌊🐠\n\n🌑 Shadow Jumper – A test of agility and precision! Leap from platform to platform, avoid deadly drops, and survive as long as possible in this high-speed jumping challenge. ⚡🏃‍♂️\n\n🏹 Undead Archer – The ultimate zombie-slaying challenge! Take control of a skilled archer, fend off waves of the undead, and see how long you can survive the apocalypse. 🧟‍♂️🔥\n\n📊 Score History – Compete against yourself and others! Track your best performances, break records, and climb the leaderboards across all our games. 🏆📈";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "bbk-Zq-yxF"; */
+"bbk-Zq-yxF.title" = "Home";
+
+/* Class = "UINavigationItem"; title = "Shadow Jumper"; ObjectID = "kM9-eo-3Ud"; */
+"kM9-eo-3Ud.title" = "Shadow Jumper";
+
+/* Class = "UINavigationItem"; title = "FeedBack"; ObjectID = "sUm-tv-tog"; */
+"sUm-tv-tog.title" = "FeedBack";

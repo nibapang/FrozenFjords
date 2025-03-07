@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65BD0EB1AB02A17A14D8CAA2 /* Pods_FrozenFjords.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B1B036EEAB0DACEC491F16 /* Pods_FrozenFjords.framework */; };
+		E9DA1A9A2D7A85C900245362 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1A992D7A85C900245362 /* AppDelegate.swift */; };
+		E9DA1A9C2D7A85C900245362 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1A9B2D7A85C900245362 /* SceneDelegate.swift */; };
+		E9DA1A9E2D7A85CA00245362 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1A9D2D7A85CA00245362 /* ViewController.swift */; };
+		E9DA1AA12D7A85CA00245362 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DA1A9F2D7A85CA00245362 /* Main.storyboard */; };
+		E9DA1AA32D7A85CC00245362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DA1AA22D7A85CC00245362 /* Assets.xcassets */; };
+		E9DA1AA62D7A85CC00245362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9DA1AA42D7A85CC00245362 /* LaunchScreen.storyboard */; };
+		E9DA1AB12D7A85CD00245362 /* FrozenFjordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1AB02D7A85CD00245362 /* FrozenFjordsTests.swift */; };
+		E9DA1ABB2D7A85CD00245362 /* FrozenFjordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1ABA2D7A85CD00245362 /* FrozenFjordsUITests.swift */; };
+		E9DA1ABD2D7A85CD00245362 /* FrozenFjordsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1ABC2D7A85CD00245362 /* FrozenFjordsUITestsLaunchTests.swift */; };
+		E9DA1ACA2D7A86F000245362 /* FjordsGameVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1AC92D7A86F000245362 /* FjordsGameVC2.swift */; };
+		E9DA1ACC2D7A871300245362 /* FjordsGameVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1ACB2D7A871300245362 /* FjordsGameVC4.swift */; };
+		E9DA1ACF2D7A873A00245362 /* FjordScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1ACD2D7A873A00245362 /* FjordScoreCell.swift */; };
+		E9DA1AD02D7A873A00245362 /* FjordScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9DA1ACE2D7A873A00245362 /* FjordScoreCell.xib */; };
+		E9DA1AD22D7A877B00245362 /* FjordExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1AD12D7A877B00245362 /* FjordExtension.swift */; };
+		E9DA1AD42D7A879C00245362 /* FjordFeedBackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1AD32D7A879C00245362 /* FjordFeedBackVC.swift */; };
+		E9DA1AD62D7A87B500245362 /* FjordSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1AD52D7A87B500245362 /* FjordSettingVC.swift */; };
+		E9DA1AD82D7A87D200245362 /* FjordScoreManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1AD72D7A87D200245362 /* FjordScoreManagerVC.swift */; };
+		E9DA1ADA2D7A89BC00245362 /* FjordHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1AD92D7A89BC00245362 /* FjordHomeVC.swift */; };
+		E9DA1ADE2D7A8FB600245362 /* UIViewController+Fjord.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1ADD2D7A8FB600245362 /* UIViewController+Fjord.m */; };
+		E9DA1AE02D7A8FC700245362 /* FjordPrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DA1ADF2D7A8FC700245362 /* FjordPrivacyVC.swift */; };
+		E9DA1AE32D7A93D300245362 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9DA1AE22D7A93D300245362 /* GoogleService-Info.plist */; };
+		E9DA1AEA2D7A94D100245362 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9DA1AEC2D7A94D100245362 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9DA1AAD2D7A85CD00245362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9DA1A8E2D7A85C900245362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9DA1A952D7A85C900245362;
+			remoteInfo = FrozenFjords;
+		};
+		E9DA1AB72D7A85CD00245362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9DA1A8E2D7A85C900245362 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9DA1A952D7A85C900245362;
+			remoteInfo = FrozenFjords;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FA41C9C90D778A8C80FAF4D /* Pods-FrozenFjords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrozenFjords.debug.xcconfig"; path = "Target Support Files/Pods-FrozenFjords/Pods-FrozenFjords.debug.xcconfig"; sourceTree = "<group>"; };
+		E9DA1A962D7A85C900245362 /* FrozenFjords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrozenFjords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DA1A992D7A85C900245362 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9DA1A9B2D7A85C900245362 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E9DA1A9D2D7A85CA00245362 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9DA1AA02D7A85CA00245362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9DA1AA22D7A85CC00245362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9DA1AA52D7A85CC00245362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9DA1AA72D7A85CC00245362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9DA1AAC2D7A85CD00245362 /* FrozenFjordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrozenFjordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DA1AB02D7A85CD00245362 /* FrozenFjordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrozenFjordsTests.swift; sourceTree = "<group>"; };
+		E9DA1AB62D7A85CD00245362 /* FrozenFjordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrozenFjordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DA1ABA2D7A85CD00245362 /* FrozenFjordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrozenFjordsUITests.swift; sourceTree = "<group>"; };
+		E9DA1ABC2D7A85CD00245362 /* FrozenFjordsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrozenFjordsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9DA1AC92D7A86F000245362 /* FjordsGameVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FjordsGameVC2.swift; sourceTree = "<group>"; };
+		E9DA1ACB2D7A871300245362 /* FjordsGameVC4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FjordsGameVC4.swift; sourceTree = "<group>"; };
+		E9DA1ACD2D7A873A00245362 /* FjordScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FjordScoreCell.swift; sourceTree = "<group>"; };
+		E9DA1ACE2D7A873A00245362 /* FjordScoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FjordScoreCell.xib; sourceTree = "<group>"; };
+		E9DA1AD12D7A877B00245362 /* FjordExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FjordExtension.swift; sourceTree = "<group>"; };
+		E9DA1AD32D7A879C00245362 /* FjordFeedBackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FjordFeedBackVC.swift; sourceTree = "<group>"; };
+		E9DA1AD52D7A87B500245362 /* FjordSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FjordSettingVC.swift; sourceTree = "<group>"; };
+		E9DA1AD72D7A87D200245362 /* FjordScoreManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FjordScoreManagerVC.swift; sourceTree = "<group>"; };
+		E9DA1AD92D7A89BC00245362 /* FjordHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FjordHomeVC.swift; sourceTree = "<group>"; };
+		E9DA1ADB2D7A8FB500245362 /* FrozenFjords-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrozenFjords-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9DA1ADC2D7A8FB600245362 /* UIViewController+Fjord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Fjord.h"; sourceTree = "<group>"; };
+		E9DA1ADD2D7A8FB600245362 /* UIViewController+Fjord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Fjord.m"; sourceTree = "<group>"; };
+		E9DA1ADF2D7A8FC700245362 /* FjordPrivacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FjordPrivacyVC.swift; sourceTree = "<group>"; };
+		E9DA1AE12D7A91F300245362 /* FrozenFjords.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FrozenFjords.entitlements; sourceTree = "<group>"; };
+		E9DA1AE22D7A93D300245362 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E9DA1AE42D7A94B600245362 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		E9DA1AE52D7A94B600245362 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E9DA1AE62D7A94BF00245362 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Main.strings; sourceTree = "<group>"; };
+		E9DA1AE72D7A94BF00245362 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E9DA1AEB2D7A94D100245362 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9DA1AED2D7A94D400245362 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9DA1AEE2D7A94D500245362 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F1B1B036EEAB0DACEC491F16 /* Pods_FrozenFjords.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrozenFjords.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F648DD5D153B1AB90428559B /* Pods-FrozenFjords.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrozenFjords.release.xcconfig"; path = "Target Support Files/Pods-FrozenFjords/Pods-FrozenFjords.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9DA1A932D7A85C900245362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BD0EB1AB02A17A14D8CAA2 /* Pods_FrozenFjords.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DA1AA92D7A85CD00245362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DA1AB32D7A85CD00245362 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D208EF040E7711F52DEA675 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1B1B036EEAB0DACEC491F16 /* Pods_FrozenFjords.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63BCDC59552E2D3DB2A904DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FA41C9C90D778A8C80FAF4D /* Pods-FrozenFjords.debug.xcconfig */,
+				F648DD5D153B1AB90428559B /* Pods-FrozenFjords.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9DA1A8D2D7A85C900245362 = {
+			isa = PBXGroup;
+			children = (
+				E9DA1A982D7A85C900245362 /* FrozenFjords */,
+				E9DA1AAF2D7A85CD00245362 /* FrozenFjordsTests */,
+				E9DA1AB92D7A85CD00245362 /* FrozenFjordsUITests */,
+				E9DA1A972D7A85C900245362 /* Products */,
+				63BCDC59552E2D3DB2A904DD /* Pods */,
+				2D208EF040E7711F52DEA675 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9DA1A972D7A85C900245362 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9DA1A962D7A85C900245362 /* FrozenFjords.app */,
+				E9DA1AAC2D7A85CD00245362 /* FrozenFjordsTests.xctest */,
+				E9DA1AB62D7A85CD00245362 /* FrozenFjordsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9DA1A982D7A85C900245362 /* FrozenFjords */ = {
+			isa = PBXGroup;
+			children = (
+				E9DA1AE22D7A93D300245362 /* GoogleService-Info.plist */,
+				E9DA1AE12D7A91F300245362 /* FrozenFjords.entitlements */,
+				E9DA1A992D7A85C900245362 /* AppDelegate.swift */,
+				E9DA1A9B2D7A85C900245362 /* SceneDelegate.swift */,
+				E9DA1A9D2D7A85CA00245362 /* ViewController.swift */,
+				E9DA1AC92D7A86F000245362 /* FjordsGameVC2.swift */,
+				E9DA1ACB2D7A871300245362 /* FjordsGameVC4.swift */,
+				E9DA1ACD2D7A873A00245362 /* FjordScoreCell.swift */,
+				E9DA1ACE2D7A873A00245362 /* FjordScoreCell.xib */,
+				E9DA1AD12D7A877B00245362 /* FjordExtension.swift */,
+				E9DA1AD32D7A879C00245362 /* FjordFeedBackVC.swift */,
+				E9DA1AD52D7A87B500245362 /* FjordSettingVC.swift */,
+				E9DA1AD72D7A87D200245362 /* FjordScoreManagerVC.swift */,
+				E9DA1AD92D7A89BC00245362 /* FjordHomeVC.swift */,
+				E9DA1ADC2D7A8FB600245362 /* UIViewController+Fjord.h */,
+				E9DA1ADD2D7A8FB600245362 /* UIViewController+Fjord.m */,
+				E9DA1ADF2D7A8FC700245362 /* FjordPrivacyVC.swift */,
+				E9DA1AEC2D7A94D100245362 /* Localizable.strings */,
+				E9DA1A9F2D7A85CA00245362 /* Main.storyboard */,
+				E9DA1AA22D7A85CC00245362 /* Assets.xcassets */,
+				E9DA1AA42D7A85CC00245362 /* LaunchScreen.storyboard */,
+				E9DA1AA72D7A85CC00245362 /* Info.plist */,
+				E9DA1ADB2D7A8FB500245362 /* FrozenFjords-Bridging-Header.h */,
+			);
+			path = FrozenFjords;
+			sourceTree = "<group>";
+		};
+		E9DA1AAF2D7A85CD00245362 /* FrozenFjordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9DA1AB02D7A85CD00245362 /* FrozenFjordsTests.swift */,
+			);
+			path = FrozenFjordsTests;
+			sourceTree = "<group>";
+		};
+		E9DA1AB92D7A85CD00245362 /* FrozenFjordsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9DA1ABA2D7A85CD00245362 /* FrozenFjordsUITests.swift */,
+				E9DA1ABC2D7A85CD00245362 /* FrozenFjordsUITestsLaunchTests.swift */,
+			);
+			path = FrozenFjordsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9DA1A952D7A85C900245362 /* FrozenFjords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9DA1AC02D7A85CD00245362 /* Build configuration list for PBXNativeTarget "FrozenFjords" */;
+			buildPhases = (
+				542200777C3DA2880DEF59F2 /* [CP] Check Pods Manifest.lock */,
+				E9DA1A922D7A85C900245362 /* Sources */,
+				E9DA1A932D7A85C900245362 /* Frameworks */,
+				E9DA1A942D7A85C900245362 /* Resources */,
+				385BD81A8F7B29A8F95649E2 /* [CP] Embed Pods Frameworks */,
+				516033DA595EC05538317B52 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrozenFjords;
+			productName = FrozenFjords;
+			productReference = E9DA1A962D7A85C900245362 /* FrozenFjords.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9DA1AAB2D7A85CD00245362 /* FrozenFjordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9DA1AC32D7A85CD00245362 /* Build configuration list for PBXNativeTarget "FrozenFjordsTests" */;
+			buildPhases = (
+				E9DA1AA82D7A85CD00245362 /* Sources */,
+				E9DA1AA92D7A85CD00245362 /* Frameworks */,
+				E9DA1AAA2D7A85CD00245362 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9DA1AAE2D7A85CD00245362 /* PBXTargetDependency */,
+			);
+			name = FrozenFjordsTests;
+			productName = FrozenFjordsTests;
+			productReference = E9DA1AAC2D7A85CD00245362 /* FrozenFjordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9DA1AB52D7A85CD00245362 /* FrozenFjordsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9DA1AC62D7A85CD00245362 /* Build configuration list for PBXNativeTarget "FrozenFjordsUITests" */;
+			buildPhases = (
+				E9DA1AB22D7A85CD00245362 /* Sources */,
+				E9DA1AB32D7A85CD00245362 /* Frameworks */,
+				E9DA1AB42D7A85CD00245362 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9DA1AB82D7A85CD00245362 /* PBXTargetDependency */,
+			);
+			name = FrozenFjordsUITests;
+			productName = FrozenFjordsUITests;
+			productReference = E9DA1AB62D7A85CD00245362 /* FrozenFjordsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9DA1A8E2D7A85C900245362 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E9DA1A952D7A85C900245362 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					E9DA1AAB2D7A85CD00245362 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E9DA1A952D7A85C900245362;
+					};
+					E9DA1AB52D7A85CD00245362 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E9DA1A952D7A85C900245362;
+					};
+				};
+			};
+			buildConfigurationList = E9DA1A912D7A85C900245362 /* Build configuration list for PBXProject "FrozenFjords" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-BR",
+				da,
+			);
+			mainGroup = E9DA1A8D2D7A85C900245362;
+			productRefGroup = E9DA1A972D7A85C900245362 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9DA1A952D7A85C900245362 /* FrozenFjords */,
+				E9DA1AAB2D7A85CD00245362 /* FrozenFjordsTests */,
+				E9DA1AB52D7A85CD00245362 /* FrozenFjordsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9DA1A942D7A85C900245362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DA1AA62D7A85CC00245362 /* LaunchScreen.storyboard in Resources */,
+				E9DA1AEA2D7A94D100245362 /* Localizable.strings in Resources */,
+				E9DA1AA32D7A85CC00245362 /* Assets.xcassets in Resources */,
+				E9DA1AE32D7A93D300245362 /* GoogleService-Info.plist in Resources */,
+				E9DA1AD02D7A873A00245362 /* FjordScoreCell.xib in Resources */,
+				E9DA1AA12D7A85CA00245362 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DA1AAA2D7A85CD00245362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DA1AB42D7A85CD00245362 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		385BD81A8F7B29A8F95649E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrozenFjords/Pods-FrozenFjords-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrozenFjords/Pods-FrozenFjords-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrozenFjords/Pods-FrozenFjords-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		516033DA595EC05538317B52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrozenFjords/Pods-FrozenFjords-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrozenFjords/Pods-FrozenFjords-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrozenFjords/Pods-FrozenFjords-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		542200777C3DA2880DEF59F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrozenFjords-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9DA1A922D7A85C900245362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DA1A9E2D7A85CA00245362 /* ViewController.swift in Sources */,
+				E9DA1AE02D7A8FC700245362 /* FjordPrivacyVC.swift in Sources */,
+				E9DA1AD82D7A87D200245362 /* FjordScoreManagerVC.swift in Sources */,
+				E9DA1AD62D7A87B500245362 /* FjordSettingVC.swift in Sources */,
+				E9DA1A9A2D7A85C900245362 /* AppDelegate.swift in Sources */,
+				E9DA1ADA2D7A89BC00245362 /* FjordHomeVC.swift in Sources */,
+				E9DA1A9C2D7A85C900245362 /* SceneDelegate.swift in Sources */,
+				E9DA1AD42D7A879C00245362 /* FjordFeedBackVC.swift in Sources */,
+				E9DA1ACA2D7A86F000245362 /* FjordsGameVC2.swift in Sources */,
+				E9DA1ADE2D7A8FB600245362 /* UIViewController+Fjord.m in Sources */,
+				E9DA1AD22D7A877B00245362 /* FjordExtension.swift in Sources */,
+				E9DA1ACF2D7A873A00245362 /* FjordScoreCell.swift in Sources */,
+				E9DA1ACC2D7A871300245362 /* FjordsGameVC4.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DA1AA82D7A85CD00245362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DA1AB12D7A85CD00245362 /* FrozenFjordsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9DA1AB22D7A85CD00245362 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9DA1ABD2D7A85CD00245362 /* FrozenFjordsUITestsLaunchTests.swift in Sources */,
+				E9DA1ABB2D7A85CD00245362 /* FrozenFjordsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9DA1AAE2D7A85CD00245362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9DA1A952D7A85C900245362 /* FrozenFjords */;
+			targetProxy = E9DA1AAD2D7A85CD00245362 /* PBXContainerItemProxy */;
+		};
+		E9DA1AB82D7A85CD00245362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9DA1A952D7A85C900245362 /* FrozenFjords */;
+			targetProxy = E9DA1AB72D7A85CD00245362 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9DA1A9F2D7A85CA00245362 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9DA1AA02D7A85CA00245362 /* Base */,
+				E9DA1AE42D7A94B600245362 /* pt-BR */,
+				E9DA1AE62D7A94BF00245362 /* da */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9DA1AA42D7A85CC00245362 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9DA1AA52D7A85CC00245362 /* Base */,
+				E9DA1AE52D7A94B600245362 /* pt-BR */,
+				E9DA1AE72D7A94BF00245362 /* da */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E9DA1AEC2D7A94D100245362 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9DA1AEB2D7A94D100245362 /* en */,
+				E9DA1AED2D7A94D400245362 /* da */,
+				E9DA1AEE2D7A94D500245362 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9DA1ABE2D7A85CD00245362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9DA1ABF2D7A85CD00245362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9DA1AC12D7A85CD00245362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA41C9C90D778A8C80FAF4D /* Pods-FrozenFjords.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FrozenFjords/FrozenFjords.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrozenFjords/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Frozen Fjords";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fjord.FrozenFjords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FrozenFjords/FrozenFjords-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E9DA1AC22D7A85CD00245362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F648DD5D153B1AB90428559B /* Pods-FrozenFjords.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FrozenFjords/FrozenFjords.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FrozenFjords/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Frozen Fjords";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fjord.FrozenFjords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FrozenFjords/FrozenFjords-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E9DA1AC42D7A85CD00245362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fjord.FrozenFjordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrozenFjords.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FrozenFjords";
+			};
+			name = Debug;
+		};
+		E9DA1AC52D7A85CD00245362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fjord.FrozenFjordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrozenFjords.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FrozenFjords";
+			};
+			name = Release;
+		};
+		E9DA1AC72D7A85CD00245362 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fjord.FrozenFjordsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrozenFjords;
+			};
+			name = Debug;
+		};
+		E9DA1AC82D7A85CD00245362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.fjord.FrozenFjordsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrozenFjords;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9DA1A912D7A85C900245362 /* Build configuration list for PBXProject "FrozenFjords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9DA1ABE2D7A85CD00245362 /* Debug */,
+				E9DA1ABF2D7A85CD00245362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9DA1AC02D7A85CD00245362 /* Build configuration list for PBXNativeTarget "FrozenFjords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9DA1AC12D7A85CD00245362 /* Debug */,
+				E9DA1AC22D7A85CD00245362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9DA1AC32D7A85CD00245362 /* Build configuration list for PBXNativeTarget "FrozenFjordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9DA1AC42D7A85CD00245362 /* Debug */,
+				E9DA1AC52D7A85CD00245362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9DA1AC62D7A85CD00245362 /* Build configuration list for PBXNativeTarget "FrozenFjordsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9DA1AC72D7A85CD00245362 /* Debug */,
+				E9DA1AC82D7A85CD00245362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9DA1A8E2D7A85C900245362 /* Project object */;
+}
