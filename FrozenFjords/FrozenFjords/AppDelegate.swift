@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppsFlyerLibDelegate {
                       )
               
               let appsFlyer = AppsFlyerLib.shared()
-              appsFlyer.appsFlyerDevKey = UIViewController.fjordAppsFlyerDevKey()
+              appsFlyer.appsFlyerDevKey = UIViewController.fjordsAppsFlyerDevKey()
               appsFlyer.appleAppID = "6742936295"
               appsFlyer.waitForATTUserAuthorization(timeoutInterval: 51)
               appsFlyer.delegate = self

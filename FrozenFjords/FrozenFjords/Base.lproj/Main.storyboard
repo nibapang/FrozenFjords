@@ -360,10 +360,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Privacy Policy" id="Dx3-KF-vhg"/>
                     <connections>
-                        <outlet property="axWebView" destination="Vyg-ns-Q5T" id="Y9R-9p-s05"/>
-                        <outlet property="bottomCos" destination="xRt-dS-dlI" id="9P2-Kz-T7N"/>
-                        <outlet property="indicatorView" destination="O97-w2-TmF" id="L1n-wf-zat"/>
-                        <outlet property="topCos" destination="d7J-5p-dDe" id="KAN-Z2-Sjf"/>
+                        <outlet property="bottomCos" destination="xRt-dS-dlI" id="2L2-tB-bCM"/>
+                        <outlet property="fjordsWebView" destination="Vyg-ns-Q5T" id="G9H-Nd-ccs"/>
+                        <outlet property="indicatorView" destination="O97-w2-TmF" id="csz-eb-mu9"/>
+                        <outlet property="topCos" destination="d7J-5p-dDe" id="D8l-N0-xLx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qnp-NQ-MJY" sceneMemberID="firstResponder"/>

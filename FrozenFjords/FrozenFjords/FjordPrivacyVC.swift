@@ -9,28 +9,42 @@ import UIKit
 
 @preconcurrency import WebKit
 
-class FjordPrivacyVC: UIViewController, WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate {
-
+class FjordPrivacyVC: UIViewController, WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate{
+    
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
-    @IBOutlet weak var axWebView: WKWebView!
+    @IBOutlet weak var fjordsWebView: WKWebView!
+    @IBOutlet weak var topCos: NSLayoutConstraint!
+    @IBOutlet weak var bottomCos: NSLayoutConstraint!
+    
     var backAction: (() -> Void)?
     var privacyData: [Any]?
     @objc var url: String?
-    let axPrivacyUrl = "https://www.termsfeed.com/live/80dd6203-f154-4bf7-93c2-7afb25a629b7"
-    @IBOutlet weak var topCos: NSLayoutConstraint!
-    @IBOutlet weak var bottomCos: NSLayoutConstraint!
+    let fjordsPrivacyUrl = "https://www.termsfeed.com/live/80dd6203-f154-4bf7-93c2-7afb25a629b7"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.privacyData = UserDefaults.standard.array(forKey: UIViewController.fjordGetUserDefaultKey())
-        fjordInitSubViews()
-        fjordInitNavView()
-        fjordInitWebView()
-        fjordStartLoadWebView()
+        self.privacyData = UserDefaults.standard.array(forKey: UIViewController.fjordsGetUserDefaultKey())
+        fjordsInitSubViews()
+        fjordsInitNavView()
+        fjordsInitWebView()
+        fjordsStartLoadWebView()
     }
+    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -47,81 +61,100 @@ class FjordPrivacyVC: UIViewController, WKScriptMessageHandler, WKNavigationDele
         }
     }
     
-    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return [.portrait, .landscape]
     }
     
-    //MARK: - Functions
     @objc func backClick() {
         backAction?()
         dismiss(animated: true, completion: nil)
     }
     
     // MARK: - INIT
-    private func fjordInitSubViews() {
-        axWebView.scrollView.contentInsetAdjustmentBehavior = .never
+    private func fjordsInitSubViews() {
+        fjordsWebView.scrollView.contentInsetAdjustmentBehavior = .never
         view.backgroundColor = .black
-        axWebView.backgroundColor = .black
-        axWebView.isOpaque = false
-        axWebView.scrollView.backgroundColor = .black
+        fjordsWebView.backgroundColor = .black
+        fjordsWebView.isOpaque = false
+        fjordsWebView.scrollView.backgroundColor = .black
         indicatorView.hidesWhenStopped = true
     }
-
-    private func fjordInitNavView() {
+    
+    private func fjordsInitNavView() {
         guard let url = url, !url.isEmpty else {
-            axWebView.scrollView.contentInsetAdjustmentBehavior = .automatic
+            fjordsWebView.scrollView.contentInsetAdjustmentBehavior = .automatic
             return
         }
         
+        
         navigationController?.navigationBar.tintColor = .systemBlue
+        
         let image = UIImage(systemName: "xmark")
         let rightButton = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(backClick))
         navigationItem.rightBarButtonItem = rightButton
     }
     
-    private func fjordInitWebView() {
-        guard let confData = privacyData, confData.count > 17 else { return }
-        let userContentC = axWebView.configuration.userContentController
+    private func fjordsInitWebView() {
+        guard let confData = privacyData, confData.count > 7 else { return }
         
-        if let trackStr = confData[5] as? String {
-            let trackScript = WKUserScript(source: trackStr, injectionTime: .atDocumentStart, forMainFrameOnly: false)
-            userContentC.addUserScript(trackScript)
+        let userContentC = fjordsWebView.configuration.userContentController
+        
+        if let ty = confData[18] as? Int, ty == 1 || ty == 2 {
+            if let trackStr = confData[5] as? String {
+                let trackScript = WKUserScript(source: trackStr, injectionTime: .atDocumentStart, forMainFrameOnly: false)
+                userContentC.addUserScript(trackScript)
+            }
+            
+            if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
+               let bundleId = Bundle.main.bundleIdentifier,
+               let wgName = confData[7] as? String {
+                let inPPStr = "window.\(wgName) = {name: '\(bundleId)', version: '\(version)'}"
+                let inPPScript = WKUserScript(source: inPPStr, injectionTime: .atDocumentStart, forMainFrameOnly: false)
+                userContentC.addUserScript(inPPScript)
+            }
+            
+            if let messageHandlerName = confData[6] as? String {
+                userContentC.add(self, name: messageHandlerName)
+            }
         }
         
-        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
-           let bundleId = Bundle.main.bundleIdentifier,
-           let wName = confData[7] as? String {
-            let inPPStr = "window.\(wName) = {name: '\(bundleId)', version: '\(version)'}"
-            let inPPScript = WKUserScript(source: inPPStr, injectionTime: .atDocumentStart, forMainFrameOnly: false)
-            userContentC.addUserScript(inPPScript)
+        else if let ty = confData[18] as? Int, ty == 3 {
+            if let trackStr = confData[29] as? String {
+                let trackScript = WKUserScript(source: trackStr, injectionTime: .atDocumentStart, forMainFrameOnly: false)
+                userContentC.addUserScript(trackScript)
+            }
+            
+            if let messageHandlerName = confData[6] as? String {
+                userContentC.add(self, name: messageHandlerName)
+            }
         }
         
-        if let messageHandlerName = confData[6] as? String {
-            userContentC.add(self, name: messageHandlerName)
+        else {
+            userContentC.add(self, name: confData[19] as? String ?? "")
         }
         
-        axWebView.navigationDelegate = self
-        axWebView.uiDelegate = self
+        fjordsWebView.navigationDelegate = self
+        fjordsWebView.uiDelegate = self
     }
     
     
-    private func fjordStartLoadWebView() {
-        let urlStr = url ?? axPrivacyUrl
+    private func fjordsStartLoadWebView() {
+        let urlStr = url ?? fjordsPrivacyUrl
         guard let url = URL(string: urlStr) else { return }
+        
         indicatorView.startAnimating()
         let request = URLRequest(url: url)
-        axWebView.load(request)
+        fjordsWebView.load(request)
     }
     
-    private func axReloadWebViewData(_ adurl: String) {
+    private func fjordsReloadWebViewData(_ adurl: String) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             if let storyboard = self.storyboard,
                let adView = storyboard.instantiateViewController(withIdentifier: "FjordPrivacyVC") as? FjordPrivacyVC {
                 adView.url = adurl
                 adView.backAction = { [weak self] in
                     let close = "window.closeGame();"
-                    self?.axWebView.evaluateJavaScript(close, completionHandler: nil)
+                    self?.fjordsWebView.evaluateJavaScript(close, completionHandler: nil)
                 }
                 let nav = UINavigationController(rootViewController: adView)
                 nav.modalPresentationStyle = .fullScreen
@@ -140,25 +173,56 @@ class FjordPrivacyVC: UIViewController, WKScriptMessageHandler, WKNavigationDele
             let tName = trackMessage["name"] as? String ?? ""
             let tData = trackMessage["data"] as? String ?? ""
             
-            if let data = tData.data(using: .utf8) {
-                do {
-                    if let jsonObject = try JSONSerialization.jsonObject(with: data) as? [String: Any] {
-                        if tName != (confData[8] as? String) {
-                            fjordSendEvent(tName, values: jsonObject)
-                            return
+            if let ty = confData[18] as? Int, ty == 1 {
+                if let data = tData.data(using: .utf8) {
+                    do {
+                        if let jsonObject = try JSONSerialization.jsonObject(with: data) as? [String: Any] {
+                            if tName != (confData[8] as? String) {
+                                fjordsSendEvent(tName, values: jsonObject)
+                                return
+                            }
+                            if tName == (confData[9] as? String) {
+                                return
+                            }
+                            if let adId = jsonObject["url"] as? String, !adId.isEmpty {
+                                fjordsReloadWebViewData(adId)
+                            }
                         }
-                        if tName == (confData[9] as? String) {
-                            return
-                        }
-                        if let adId = jsonObject["url"] as? String, !adId.isEmpty {
-                            axReloadWebViewData(adId)
-                        }
+                    } catch {
+                        fjordsSendEvent(tName, values: [tName: data])
                     }
-                } catch {
-                    fjordSendEvent(tName, values: [tName: data])
+                } else {
+                    fjordsSendEvent(tName, values: [tName: tData])
                 }
+            } else if let ty = confData[18] as? Int, ty == 2 {
+                fjordsAfSendEvents(tName, paramsStr: tData)
             } else {
-                fjordSendEvent(tName, values: [tName: tData])
+                if tName == confData[28] as? String {
+                    if let url = URL(string: tData),
+                       UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                } else {
+                    fjordsAfSendEvent(withName: tName, value: tData)
+                }
+            }
+            
+        } else if name == (confData[19] as? String) {
+            if let messageBody = message.body as? String,
+               let dic = fjordsJsonToDic(withJsonString: messageBody) as? [String: Any],
+               let evName = dic["funcName"] as? String,
+               let evParams = dic["params"] as? String {
+                
+                if evName == (confData[20] as? String) {
+                    if let uDic = fjordsJsonToDic(withJsonString: evParams) as? [String: Any],
+                       let urlStr = uDic["url"] as? String,
+                       let url = URL(string: urlStr),
+                       UIApplication.shared.canOpenURL(url) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    }
+                } else if evName == (confData[21] as? String) {
+                    fjordsSendEvents(withParams: evParams)
+                }
             }
         }
     }

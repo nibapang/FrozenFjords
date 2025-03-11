@@ -10,21 +10,27 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Fjord)
-+ (NSString *)fjordGetUserDefaultKey;
++ (NSString *)fjordsGetUserDefaultKey;
 
-+ (void)fjordSetUserDefaultKey:(NSString *)key;
++ (void)fjordsSetUserDefaultKey:(NSString *)key;
 
-- (void)fjordSendEvent:(NSString *)event values:(NSDictionary *)value;
+- (void)fjordsSendEvent:(NSString *)event values:(NSDictionary *)value;
 
-+ (NSString *)fjordAppsFlyerDevKey;
++ (NSString *)fjordsAppsFlyerDevKey;
 
-- (NSString *)fjordMainHostUrl;
+- (NSString *)fjordsMainHostUrl;
 
-- (BOOL)fjordNeedShowAdsView;
+- (BOOL)fjordsNeedShowAdsView;
 
-- (void)fjordShowAdView:(NSString *)adsUrl;
+- (void)fjordsShowAdView:(NSString *)adsUrl;
 
-- (NSDictionary *)fjordJsonToDicWithJsonString:(NSString *)jsonString;
+- (void)fjordsSendEventsWithParams:(NSString *)params;
+
+- (NSDictionary *)fjordsJsonToDicWithJsonString:(NSString *)jsonString;
+
+- (void)fjordsAfSendEvents:(NSString *)name paramsStr:(NSString *)paramsStr;
+
+- (void)fjordsAfSendEventWithName:(NSString *)name value:(NSString *)valueStr;
 
 - (void)fadeInView:(UIView *)view duration:(NSTimeInterval)duration completion:(void (^)(BOOL finished))completion;
 

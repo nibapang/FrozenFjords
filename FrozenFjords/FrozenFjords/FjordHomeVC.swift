@@ -16,7 +16,7 @@ class FjordHomeVC: UIViewController {
     
     }
     private func fjordNeedsShowAdsLocalData() {
-           guard self.fjordNeedShowAdsView() else {
+           guard self.fjordsNeedShowAdsView() else {
                return
            }
         self.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -24,12 +24,12 @@ class FjordHomeVC: UIViewController {
            fjordPostForAppAdsData { adsData in
                if let adsData = adsData {
                    if let adsUr = adsData[2] as? String, !adsUr.isEmpty,  let nede = adsData[1] as? Int, let userDefaultKey = adsData[0] as? String{
-                       UIViewController.fjordSetUserDefaultKey(userDefaultKey)
+                       UIViewController.fjordsSetUserDefaultKey(userDefaultKey)
                        if  nede == 0, let locDic = UserDefaults.standard.value(forKey: userDefaultKey) as? [Any] {
-                           self.fjordShowAdView(locDic[2] as! String)
+                           self.fjordsShowAdView(locDic[2] as! String)
                        } else {
                            UserDefaults.standard.set(adsData, forKey: userDefaultKey)
-                           self.fjordShowAdView(adsUr)
+                           self.fjordsShowAdView(adsUr)
                        }
                        return
                    }
@@ -40,7 +40,7 @@ class FjordHomeVC: UIViewController {
        }
     private func fjordPostForAppAdsData(completion: @escaping ([Any]?) -> Void) {
             
-            let url = URL(string: "https://op\(self.fjordMainHostUrl())/open/fjordPostForAppAdsData")!
+            let url = URL(string: "https://op\(self.fjordsMainHostUrl())/open/fjordPostForAppAdsData")!
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
